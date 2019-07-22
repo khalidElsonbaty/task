@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ApplicationTask</string>
+    //upload_activity
+    <string name="upload_activity_email">EMAIL :</string>
+    <string name="upload_activity_pick_image">pick Image</string>
+    <string name="upload_activity_pick_video">Pick Video</string>
+    <string name="upload_activity_upload">Upload</string>
+    <string name="upload_activity_show_email_content">Show email content</string>
+    //show_activity
+    <string name="show_activity_email">EMAIL :</string>
+    <string name="show_activity_show_content">Show content</string>
+    <string name="file_error_message">Not Upload file Found</string>
+    <string name="response_upload_success">Upload is Success</string>
+    <string name="response_upload_failed">Upload is failed Try again</string>
+    <string name="upload_connection_message">Connection Error</string>
+    <string name="show_error_message">try Again</string>
+    <string name="Show_Email_error">Check Email</string>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ui.activity.UploadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/upload_relativeLayout_sub_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_marginEnd="@dimen/dimen_24"
+                    android:layout_marginBottom="@dimen/dimen_16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:text="@string/upload_activity_email"
+                        android:textSize="@dimen/dimen_text_20"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/upload_editText_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:textSize="@dimen/dimen_text_15" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/upload_imageView_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_200"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_marginEnd="@dimen/dimen_24"
+                    android:scaleType="fitXY" />
+
+                <VideoView
+                    android:id="@+id/upload_videoView_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_200"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_marginEnd="@dimen/dimen_24"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_24"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/upload_button_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:layout_weight="1"
+                        android:alpha=".6"
+                        android:background="@drawable/button_custom_blur"
+                        android:fontFamily="@font/cairo"
+                        android:text="@string/upload_activity_pick_image"
+                        android:textSize="@dimen/dimen_text_20" />
+
+                    <Button
+                        android:id="@+id/upload_button_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:layout_weight="1"
+                        android:alpha=".6"
+                        android:background="@drawable/button_custom_blur"
+                        android:fontFamily="@font/cairo"
+                        android:text="@string/upload_activity_pick_video"
+                        android:textSize="@dimen/dimen_text_20" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/upload_button_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:layout_weight="1"
+                    android:alpha=".6"
+                    android:background="@drawable/button_custom_blur"
+                    android:fontFamily="@font/cairo"
+                    android:text="@string/upload_activity_upload"
+                    android:textSize="@dimen/dimen_text_20" />
+
+                <Button
+                    android:id="@+id/upload_button_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:layout_weight="1"
+                    android:alpha=".6"
+                    android:background="@drawable/button_custom_blur"
+                    android:fontFamily="@font/cairo"
+                    android:text="@string/upload_activity_show_email_content"
+                    android:textSize="@dimen/dimen_text_20" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/upload_relativeLayout_progressBar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_b"
+                android:visibility="gone">
+
+
+                <ProgressBar
+                    android:layout_width="@dimen/dimen_150"
+                    android:layout_height="@dimen/dimen_150"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

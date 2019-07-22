@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/show_relativeLayout_sub_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ui.activity.ShowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cairo"
+                android:text="@string/show_activity_email"
+                android:textSize="@dimen/dimen_text_20"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/show_editText_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:textSize="@dimen/dimen_text_15" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/show_button_show"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:alpha=".6"
+            android:background="@drawable/button_custom_blur"
+            android:fontFamily="@font/cairo"
+            android:text="@string/show_activity_show_content"
+            android:textSize="@dimen/dimen_text_20" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Show_RecyclerView_Items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/show_relativeLayout_progressBar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_b"
+        android:visibility="gone">
+
+
+        <ProgressBar
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_150"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
